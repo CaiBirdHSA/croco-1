@@ -52,15 +52,15 @@ CROCO_config = 'joel_prueba1';
 %
 % Grid dimensions:
 %
-lonmin =  -110;   % Minimum longitude [degree east]
-lonmax =   -69;   % Maximum longitude [degree east]
-latmin =   -60;   % Minimum latitudeF  [degree north]
-latmax =     8;   % Maximum latitude  [degree north]
+lonmin =  -100;   % Minimum longitude [degree east]
+lonmax =   -70;   % Maximum longitude [degree east]
+latmin =   -45;   % Minimum latitudeF  [degree north]
+latmax =     2;   % Maximum latitude  [degree north]
 %
 % Grid resolution [degree]
 %
-%%%---- dl = 1/3;
-dl = 1/6;
+dl = 1/3;
+%%%----dl = 1/6;
 %
 % Number of vertical Levels (! should be the same in param.h !)
 %
