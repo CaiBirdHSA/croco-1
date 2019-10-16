@@ -4,6 +4,8 @@
 #!*.m
 #!UTILITIES/m_map1.4h/m_grid.m
 
+CROCO_FILES/*
+
 # Logs and databases #
 ######################
 *.log
