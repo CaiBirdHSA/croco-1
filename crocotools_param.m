@@ -220,8 +220,8 @@ pathfinder_sst_name=[DATADIR,...
 %
 %  Open boundaries switches (! should be consistent with cppdefs.h !)
 %
-%%%--- obc = [1 1 1 1]; % open boundaries (1=open , [S E N W])
-obc = [1 0 1 1]; % open boundaries (1=open , [S E N W])
+obc = [1 1 1 1]; % open boundaries (1=open , [S E N W])
+%%%--- obc = [1 0 1 1]; % open boundaries (1=open , [S E N W])
 %
 %  Level of reference for geostrophy calculation
 %
