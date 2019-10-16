@@ -32,8 +32,10 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 disp(['Add the paths of the different toolboxes'])
-tools_path='../croco_tools-v1.0/';
-croco_path='../../croco-v1.0/';
+%%% tools_path='../croco_tools-v1.0/';
+%%% croco_path='../../croco-v1.0/';
+tools_path='/data/users/jticse/CROCO/croco_tools-v1.0/';
+croco_path='/data/users/jticse/CROCO/croco-v1.0/';
 myutilpath=[tools_path,'UTILITIES/'];
 %
 % Other software directories
