@@ -47,19 +47,20 @@
 %
 %  CROCO title names and directories
 %
-CROCO_title  = 'Benguela Model';
-CROCO_config = 'Benguela_LR';
+CROCO_title  = 'joel-prueba1';
+CROCO_config = 'joel_prueba1';
 %
 % Grid dimensions:
 %
-lonmin =   8;   % Minimum longitude [degree east]
-lonmax =  22;   % Maximum longitude [degree east]
-latmin = -38;   % Minimum latitudeF  [degree north]
-latmax = -26;   % Maximum latitude  [degree north]
+lonmin =  -110;   % Minimum longitude [degree east]
+lonmax =   -69;   % Maximum longitude [degree east]
+latmin =   -60;   % Minimum latitudeF  [degree north]
+latmax =     8;   % Maximum latitude  [degree north]
 %
 % Grid resolution [degree]
 %
-dl = 1/3;
+%%%---- dl = 1/3;
+dl = 1/6;
 %
 % Number of vertical Levels (! should be the same in param.h !)
 %
@@ -87,7 +88,8 @@ hmax_coast = 500;
 % Maximum depth [m] (cut the topography to prevent
 % extrapolations below WOA data)
 %
-hmax = 5000;
+%%%---- hmax = 5000;
+hmax = 6000;
 %
 % Slope parameter (r=grad(h)/h) maximum value for topography smoothing
 %
@@ -145,7 +147,8 @@ CROCO_files_dir=[RUN_dir,'CROCO_FILES/'];
 %
 %  Global data directory (etopo, coads, datasets download from ftp, etc..)
 %
-DATADIR='../../croco_tools-v1.0/'; 
+%%%--- DATADIR='../../croco_tools-v1.0/'; 
+DATADIR='/data/users/jticse/CROCO/DATASETS_CROCOTOOLS/'; 
 %
 %  Forcing data directory (ncep, quikscat, datasets download with opendap, etc..)
 %
@@ -155,14 +158,14 @@ eval(['!mkdir ',CROCO_files_dir])
 %
 % CROCO file names (grid, forcing, bulk, climatology, initial)
 %
-grdname  = [CROCO_files_dir,'croco_grd.nc'];
-frcname  = [CROCO_files_dir,'croco_frc.nc'];
-blkname  = [CROCO_files_dir,'croco_blk.nc'];
-clmname  = [CROCO_files_dir,'croco_clm.nc'];
-bryname  = [CROCO_files_dir,'croco_bry.nc'];
-ininame  = [CROCO_files_dir,'croco_ini.nc'];
-bioname  = [CROCO_files_dir,'croco_frcbio.nc']; % Iron Dust forcing for PISCES
-rivname =  [CROCO_files_dir,'croco_runoff.nc'];
+grdname  = [CROCO_files_dir,'prueba1_grd.nc'];
+frcname  = [CROCO_files_dir,'prueba1_frc.nc'];
+blkname  = [CROCO_files_dir,'prueba1_blk.nc'];
+clmname  = [CROCO_files_dir,'prueba1_clm.nc'];
+bryname  = [CROCO_files_dir,'prueba1_bry.nc'];
+ininame  = [CROCO_files_dir,'prueba1_ini.nc'];
+bioname  = [CROCO_files_dir,'prueba1_frcbio.nc']; % Iron Dust forcing for PISCES
+rivname =  [CROCO_files_dir,'prueba1_runoff.nc'];
 %
 % intermediate z-level data files (not used in simulations)
 %
@@ -229,7 +232,8 @@ zref = -1000;
 %
 makeini    = 1;   % initial data
 makeclim   = 1;   % climatological data (for boundaries and nudging layers)
-makebry    = 1;   % lateral boundary data
+%%%--- makebry    = 1;   % lateral boundary data
+makebry    = 0;   % lateral boundary data
 makenpzd   = 0;   % initial and boundary data for NChlPZD and N2ChlPZD2 models
 makebioebus= 0;   % initial and boundary data for BioEBUS model
 makepisces = 0;   % initial and boundary data for PISCES model
