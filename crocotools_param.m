@@ -232,8 +232,8 @@ zref = -1000;
 %
 makeini    = 1;   % initial data
 makeclim   = 1;   % climatological data (for boundaries and nudging layers)
-%%%--- makebry    = 1;   % lateral boundary data
-makebry    = 0;   % lateral boundary data
+makebry    = 1;   % lateral boundary data
+%%%--- makebry    = 0;   % lateral boundary data
 makenpzd   = 0;   % initial and boundary data for NChlPZD and N2ChlPZD2 models
 makebioebus= 0;   % initial and boundary data for BioEBUS model
 makepisces = 0;   % initial and boundary data for PISCES model
